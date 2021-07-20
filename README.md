@@ -96,11 +96,11 @@ There are some limitations as of now. Might get eliminated in future if possible
 
 ## Todo
 
-[ ] Fix the flatulatation problem with counter and average emotion by `keeping track of past emotions`.
+- [ ] Fix the flatulatation problem with counter and average emotion by `keeping track of past emotions`.
 
-[ ] Implement different versions of emoji for different `genders`. Can be followed up by other parameters like `eye color, skin color etc`.
+- [ ] Implement different versions of emoji for different `genders`. Can be followed up by other parameters like `eye color, skin color etc`.
 
-[ ] `(Should be done parallely)` Transfer the emojis to `SVG` and if possible then animatable SVGs for better customization and cool effects. If not then `GIFs` are also an reliable option.
+- [ ] `(Should be done parallely)` Transfer the emojis to `SVG` and if possible then animatable SVGs for better customization and cool effects. If not then `GIFs` are also an reliable option.
 
 #
 
