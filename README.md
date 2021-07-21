@@ -92,11 +92,11 @@ There are some limitations as of now. Might get eliminated in future if possible
 
 - Does not interact with `side faces`. It needs straight looking face.
 
-- Emotion flatulates very much sometimes. It can go from sad to happy in one frame which is not practical.
+- ~~Emotion flatuates very much sometimes. It can go from sad to happy in one frame which is not practical.~~
 
 ## Todo
 
-- [ ] Fix the flatulatation problem with counter and average emotion by `keeping track of past emotions`.
+- [x] Fix the flatuation problem with counter and average emotion by `keeping track of past emotions`.
 
 - [ ] Implement different versions of emoji for different `genders`. Can be followed up by other parameters like `eye color, skin color etc`.
 
