@@ -20,7 +20,7 @@ genderModel = "model/gender_net.caffemodel"
 # Pre defined values for gender model, changing this may break the model
 MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
 genderList = ['male', 'female']
-genderNet = cv2.dnn.readNet(genderModel, genderProto)
+# genderNet = cv2.dnn.readNet(genderModel, genderProto)
 padding = 20
 
 
@@ -84,18 +84,18 @@ while(True):
     # If x and y both are 0 that means no face was detected
     if x != 0 and y != 0:
         # First predict the gender of the face
-        faceBox = [x, y, x+w, y+h]
-        face = frame[max(0, faceBox[1]-padding):
-                     min(faceBox[3]+padding, frame.shape[0]-1), max(0, faceBox[0]-padding):min(faceBox[2]+padding, frame.shape[1]-1)]
+        # faceBox = [x, y, x+w, y+h]
+        # face = frame[max(0, faceBox[1]-padding):
+        #              min(faceBox[3]+padding, frame.shape[0]-1), max(0, faceBox[0]-padding):min(faceBox[2]+padding, frame.shape[1]-1)]
 
-        blob = cv2.dnn.blobFromImage(
-            face, 1.0, (227, 227), MODEL_MEAN_VALUES, swapRB=False)
-        genderNet.setInput(blob)
-        genderPreds = genderNet.forward()
-        gender = genderList[genderPreds[0].argmax()]
-        result["gender"] = gender
+        # blob = cv2.dnn.blobFromImage(
+        #     face, 1.0, (227, 227), MODEL_MEAN_VALUES, swapRB=False)
+        # genderNet.setInput(blob)
+        # genderPreds = genderNet.forward()
+        # gender = genderList[genderPreds[0].argmax()]
+        # result["gender"] = gender
 
-        cv2.putText(frame, gender, (x, y+h+10),
+        cv2.putText(frame, result["gender"], (x, y+h+10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
 
         # We only keep track of last 10 emotions, this figure needs to be calibered in future
