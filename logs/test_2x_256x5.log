@@ -1,0 +1,20 @@
+[95m[09/10/21 12:41:51][^][INFO]     Starting Programme[00m
+[96m[09/10/21 12:41:51][-][LOG]      [00mLoading data started
+[92m[09/10/21 12:41:56][+][SUCCESS]  Data loading done.[00m
+[93m[09/10/21 12:41:56][*][INFO]     Number of  total instances: 35888[00m
+[96m[09/10/21 12:41:56][-][LOG]      [00mStarting Pre processing for data
+[96m[09/10/21 12:41:56][-][LOG]      [00m[Pre-Processing] Staring
+[96m[09/10/21 12:41:56][-][LOG]      [00m[Pre-Processing] Splitting data into training and test samples
+[96m[09/10/21 12:42:23][-][LOG]      [00m[Pre-Processing] Normalizing pixel values from [0,255] to [0,1]
+[96m[09/10/21 12:42:23][-][LOG]      [00m[Pre-Processing] Reshaping data to 48x48
+[93m[09/10/21 12:43:11][*][INFO]     Train samples: 57418[00m
+[93m[09/10/21 12:43:13][*][INFO]     Test samples: 7178[00m
+[92m[09/10/21 12:43:13][+][SUCCESS]  [Pre-Processing] Done[00m
+[96m[09/10/21 12:43:13][-][LOG]      [00mStarting training model
+[96m[09/10/21 12:43:13][-][LOG]      [00m[Training] Initializing Sequential model
+[96m[09/10/21 12:43:40][-][LOG]      [00m[Training] Adding convolution layers to model x 3
+[96m[09/10/21 12:43:50][-][LOG]      [00m[Training] Generating image data in batches
+[96m[09/10/21 12:43:50][-][LOG]      [00m[Training] configuring model for training
+[96m[09/10/21 12:43:51][-][LOG]      [00m[Training] Fitting the model as per batches
+Epoch 1/5
+  1/256 [..............................] - ETA: 3:32:09 - loss: 1.9472 - accuracy: 0.1289
